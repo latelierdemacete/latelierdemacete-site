@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   L&rsquo;Atelier de Macete | Maquillage artistique &amp; ateliers cr&eacute;atifs en Alsace
+  </title>
+  <meta content="L&rsquo;Atelier de Macete propose du maquillage artistique, des ateliers cr&eacute;atifs et des animations &eacute;v&eacute;nementielles &agrave; Strasbourg, dans le Bas-Rhin, le Haut-Rhin et partout en Alsace." name="description"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="//fonts.googleapis.com" rel="dns-prefetch"/>
+  <link href="//fonts.gstatic.com" rel="dns-prefetch"/>
+  <link as="image" href="julie-maquilleuse-artistique-alsace.webp" imagesizes="(max-width:768px) 290px, (max-width:1100px) 380px, 650px" imagesrcset="
+        julie-maquilleuse-artistique-alsace-mobile.webp 700w,
+        julie-maquilleuse-artistique-alsace.webp 813w
+    " rel="preload"/>
+  <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..700,0..100,0..1&amp;family=Inter:wght@300;400;500;600&amp;family=Marcellus&amp;display=swap" rel="stylesheet"/>
+  <style>
+   :root{
+    --cream:#F5EFE6;
+    --rose:#C89AA4;
+    --lavender:#A59BBE;
+    --lavender-light:#C7BBE8;
+    --bronze:#8C735A;
+    --text:#2C2926;
+    --muted:#6F675F;
+    --white:#ffffff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    color:var(--text);
+    line-height:1.7;
+    background:
+        radial-gradient(circle at 12% 18%, rgba(200,154,164,.14), transparent 24%),
+        radial-gradient(circle at 85% 30%, rgba(165,155,190,.12), transparent 22%),
+        radial-gradient(circle at 50% 70%, rgba(255,245,232,.65), transparent 35%),
+        linear-gradient(135deg,#f8f3ec,#f4eee7);
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    opacity:.30;
+
+    background:
+        radial-gradient(circle at 20% 30%, rgba(200,154,164,.12), transparent 28%),
+        radial-gradient(circle at 80% 70%, rgba(165,155,190,.10), transparent 30%),
+        radial-gradient(circle at 50% 50%, rgba(255,255,255,.42), transparent 45%),
+
+        repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 2px,
+            rgba(255,255,255,.18) 2px,
+            rgba(255,255,255,.18) 3px
+        );
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:-2;
+    background:
+        radial-gradient(circle at 15% 20%, rgba(201,156,168,0.12), transparent 35%),
+        radial-gradient(circle at 82% 28%, rgba(163,156,191,0.10), transparent 35%),
+        radial-gradient(circle at 50% 70%, rgba(255,238,215,0.28), transparent 45%);
+}
+
+img{
+    display:block;
+    max-width:100%;
+    height:auto;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+section{
+    padding:120px 8%;
+}
+
+.container{
+    width:min(1400px, 100%);
+    margin:auto;
+}
+
+h1,h2{
+    font-family:'Fraunces', serif;
+    font-weight:500;
+    line-height:1.02;
+    font-variation-settings:"SOFT" 40, "WONK" 1;
+}
+
+h3{
+    font-family:'Marcellus', serif;
+    font-weight:400;
+    line-height:1.15;
+}
+
+h1{
+    font-size:clamp(3rem, 7vw, 6rem);
+}
+
+h2{
+    font-size:clamp(2.4rem, 5vw, 4.5rem);
+}
+
+p{
+    color:var(--muted);
+    font-size:1.05rem;
+}
+
+.btn-group{
+    display:flex;
+    gap:18px;
+    margin-top:40px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:18px 34px;
+    border-radius:999px;
+    transition:.3s ease;
+    font-weight:600;
+    line-height:1;
+}
+
+.btn-primary{
+    background:linear-gradient(135deg,#c89ab1 0%, #a99bd2 100%);
+    color:#ffffff;
+    box-shadow:0 12px 30px rgba(169,155,210,.28);
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+    box-shadow:0 18px 42px rgba(169,155,210,.34);
+}
+.btn-secondary{
+    border:1px solid rgba(0,0,0,.08);
+    background:rgba(255,255,255,.55);
+    backdrop-filter:blur(10px);
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+    position:relative;
+}
+
+
+
+.hero-grid{
+    display:grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap:90px;
+    align-items:center;
+    position:relative;
+    z-index:2;
+}
+
+.kicker{
+    letter-spacing:4px;
+    font-size:.9rem;
+    color:var(--bronze);
+    margin-bottom:20px;
+}
+
+.hero h1{
+    margin-bottom:28px;
+    font-weight:600;
+    line-height:.98;
+    letter-spacing:-0.01em;
+    font-size:clamp(3.3rem, 7vw, 6.3rem);
+}
+
+.hero h1 .accent{
+    font-family:'Nothing You Could Do', cursive;
+    font-size:0.92em;
+    font-weight:400;
+    color:#c7bbe8;
+    line-height:0.85;
+    letter-spacing:-0.01em;
+}
+.hero-text{
+    max-width:700px;
+    padding-top:40px;
+}
+
+.hero-sub{
+    margin-top:25px;
+    font-size:1.1rem;
+}
+
+.hero-art{
+    position:relative;
+    height:760px;
+}
+.hero-main::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    border:14px solid rgba(245,239,230,.95);
+    border-radius:inherit;
+    pointer-events:none;
+    z-index:3;
+}
+.hero-main{
+    position:absolute;
+    width:650px;
+    height:auto;
+    right:10px;
+    top:40px;
+    z-index:2;
+}
+.hero-contour{
+    position:absolute;
+    width:690px;
+    height:auto;
+    right:-8px;
+    top:18px;
+    z-index:3;
+    pointer-events:none;
+    opacity:.78;
+}
+.hero-secondary{
+    position:absolute;
+    width:230px;
+    left:30px;
+    top:430px;
+    border-radius:50%;
+    overflow:hidden;
+    box-shadow:0 20px 60px rgba(0,0,0,.12);
+    z-index:3;
+}
+
+.hero-logo{
+    position:absolute;
+    width:185px;
+    height:auto;
+    left:485px;
+    top:25px;
+    opacity:.92;
+    z-index:4;
+    filter:drop-shadow(0 15px 30px rgba(44,41,38,.10));
+}
+
+
+.line1{
+    width:520px;
+    height:280px;
+    right:40px;
+    top:260px;
+    transform:rotate(-12deg);
+}
+
+.line2{
+    width:300px;
+    height:500px;
+    right:190px;
+    top:120px;
+    transform:rotate(18deg);
+}
+
+@media(max-width:1100px){
+
+    .hero-grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero-art{
+        height:580px;
+    }
+
+    .hero-main{
+        width:380px;
+        right:50%;
+        transform:translateX(50%);
+    }
+
+    .hero-secondary{
+        width:180px;
+        left:15%;
+        top:360px;
+    }
+}
+
+@media(max-width:768px){
+
+    section{
+        padding:90px 6%;
+    }
+
+    .hero-art{
+        height:430px;
+    }
+
+    .hero-main{
+        width:290px;
+        top:60px;
+    }
+
+    .hero-secondary{
+        width:120px;
+        top:300px;
+        left:10%;
+    }
+
+    .hero-logo{
+    width:115px;
+    left:58%;
+    top:40px;
+    right:auto;
+}
+}
+.univers{
+    padding:120px 0;
+}
+.univers-header{
+    text-align:center;
+    margin-bottom:80px;
+}
+.universe-block{
+    min-height:75vh;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:70px;
+    padding:90px 8%;
+}
+
+.universe-one{
+    background:linear-gradient(135deg, rgba(200,154,164,.16), transparent 65%);
+}
+
+.universe-two{
+    background:linear-gradient(135deg, transparent 35%, rgba(165,155,190,.16));
+}
+
+.universe-three{
+    background:linear-gradient(135deg, rgba(140,115,90,.12), transparent 65%);
+}
+
+.universe-image img{
+    width:100%;
+    height:620px;
+    object-fit:cover;
+    border-radius: 38% 62% 55% 45% / 42% 40% 60% 58%;
+    box-shadow:0 28px 80px rgba(44,41,38,.14);
+}
+.universe-one .universe-image img{
+    transform:rotate(-2deg);
+}
+
+.universe-two .universe-image img{
+    transform:rotate(3deg);
+}
+
+.universe-three .universe-image img{
+    transform:rotate(-1deg);
+}
+
+.universe-image img{
+    transition:
+        transform .45s ease,
+        box-shadow .45s ease;
+}
+
+.universe-image:hover img{
+    transform:rotate(0deg) scale(1.015);
+    box-shadow:0 36px 95px rgba(44,41,38,.18);
+}
+.universe-text{
+    max-width:520px;
+}
+
+.universe-label{
+    letter-spacing:3px;
+    text-transform:uppercase;
+    font-size:.8rem;
+    color:#c7bbe8;
+    margin-bottom:18px;
+}
+
+.universe-text h2{
+    margin-bottom:24px;
+}
+
+.universe-text p{
+    margin-bottom:24px;
+}
+
+.universe-link{
+    display:inline-block;
+    margin-top:10px;
+    color:var(--text);
+    border-bottom:1px solid var(--bronze);
+    padding-bottom:4px;
+}
+
+@media(max-width:900px){
+.univers-header{
+    margin-bottom:50px;
+}
+    .universe-block{
+        grid-template-columns:1fr;
+        min-height:auto;
+        padding:80px 6%;
+    }
+
+    .universe-block.reverse .universe-image{
+        order:1;
+    }
+
+    .universe-block.reverse .universe-text{
+        order:2;
+    }
+
+    .universe-image img{
+        height:auto;
+    }
+}
+.manifesto{
+    padding:180px 8%;
+}
+
+.manifesto-box{
+    max-width:900px;
+    margin:auto;
+}
+
+.manifesto-label{
+    letter-spacing:4px;
+    text-transform:uppercase;
+    font-size:.82rem;
+    color:var(--bronze);
+    margin-bottom:22px;
+}
+
+.manifesto h2{
+    margin-bottom:48px;
+    max-width:700px;
+}
+
+.manifesto h3{
+    font-size:2rem;
+    color:var(--text);
+}
+
+.manifesto-name{
+    margin-top:70px;
+    margin-bottom:24px;
+}
+
+.manifesto p{
+    font-size:1.18rem;
+    line-height:2;
+    margin-bottom:28px;
+    max-width:760px;
+}
+.final-cta{
+    min-height:760px;
+    padding:120px 8%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+    background:transparent;
+}
+
+.final-cta::before{
+    content:"";
+    position:absolute;
+    width:850px;
+    height:650px;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%) rotate(-2deg);
+    border:1px solid rgba(199,187,232,.42);
+    border-radius:45% 55% 48% 52% / 52% 45% 55% 48%;
+    background:rgba(255,255,255,.12);
+    box-shadow:0 24px 60px rgba(44,41,38,.035);
+    pointer-events:none;
+}
+
+.final-cta-content{
+    position:relative;
+    z-index:2;
+    width:100%;
+    max-width:650px;
+    margin:auto;
+}
+
+.final-cta-label{
+    letter-spacing:3px;
+    text-transform:uppercase;
+    font-size:.82rem;
+    color:var(--lavender-light, #c7bbe8);
+    margin-bottom:20px;
+}
+
+.final-cta h2{
+    max-width:650px;
+    margin:0 auto 28px;
+    font-size:clamp(2.5rem,4.2vw,4rem);
+}
+
+.final-cta p{
+    max-width:520px;
+    margin:0 auto 38px;
+    font-size:1.08rem;
+    line-height:1.8;
+}
+
+.final-cta-links{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    margin-top:35px;
+}
+
+.final-cta-links a{
+    font-family:'Nothing You Could Do', cursive;
+    font-size:1.45rem;
+    color:var(--lavender-light);
+    text-decoration:none;
+    transition:.25s ease;
+}
+
+.final-cta-links a:hover{
+    color:var(--rose);
+}
+@media(max-width:768px){
+    .final-cta{
+        min-height:700px;
+        padding:100px 6%;
+    }
+    .final-cta::before{
+        width:94%;
+        height:620px;
+        border-radius:38% 62% 48% 52% / 48% 43% 57% 52%;
+    }
+    .final-cta-content{max-width:86%}
+    .final-cta h2{
+        max-width:100%;
+        font-size:clamp(2.35rem,11vw,3.4rem);
+    }
+    .final-cta p{
+        max-width:100%;
+        font-size:1rem;
+    }
+}
+
+
+/* AVIS GOOGLE */
+
+.google-reviews{
+    padding:120px 0 100px;
+    overflow:hidden;
+    text-align:center;
+    position:relative;
+}
+
+.google-reviews-header{
+    padding:0 8%;
+    margin-bottom:55px;
+}
+
+.google-stars{
+    color:#c89ab1;
+    font-size:1.55rem;
+    letter-spacing:.22em;
+    margin-bottom:12px;
+}
+
+.google-reviews h2{
+    margin-bottom:8px;
+}
+
+.google-reviews-count{
+    color:var(--muted);
+    font-size:1rem;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+}
+
+.reviews-marquee{
+    width:100%;
+    overflow:hidden;
+    position:relative;
+    padding:22px 0;
+    border-top:1px solid rgba(140,115,90,.16);
+    border-bottom:1px solid rgba(140,115,90,.16);
+}
+
+/* Fondu discret aux extrémités */
+.reviews-marquee::before,
+.reviews-marquee::after{
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    width:10%;
+    z-index:2;
+    pointer-events:none;
+}
+
+.reviews-marquee::before{
+    left:0;
+    background:linear-gradient(
+        to right,
+        #f7f1ea 0%,
+        rgba(247,241,234,0) 100%
+    );
+}
+
+.reviews-marquee::after{
+    right:0;
+    background:linear-gradient(
+        to left,
+        #f7f1ea 0%,
+        rgba(247,241,234,0) 100%
+    );
+}
+
+.reviews-track{
+    display:flex;
+    width:max-content;
+    animation:reviews-scroll 58s linear infinite;
+}
+
+.reviews-group{
+    display:flex;
+    align-items:center;
+    flex-shrink:0;
+}
+
+.review-item{
+    display:flex;
+    align-items:center;
+    white-space:nowrap;
+    font-family:'Fraunces',serif;
+    font-size:clamp(1.2rem,2vw,1.65rem);
+    font-weight:400;
+    color:var(--text);
+}
+
+.review-item::after{
+    content:"•";
+    margin:0 38px;
+    color:var(--lavender-light, #c7bbe8);
+    font-family:'Inter',sans-serif;
+    font-size:1rem;
+}
+
+.review-item .stars{
+    color:#c89ab1;
+    font-family:'Inter',sans-serif;
+    font-size:.8rem;
+    letter-spacing:.08em;
+    margin-right:13px;
+}
+
+.reviews-marquee:hover .reviews-track{
+    animation-play-state:paused;
+}
+
+@keyframes reviews-scroll{
+    from{
+        transform:translateX(0);
+    }
+
+    to{
+        transform:translateX(-50%);
+    }
+}
+
+@media(max-width:768px){
+    .google-reviews{
+        padding:90px 0 80px;
+    }
+
+    .google-reviews-header{
+        margin-bottom:38px;
+    }
+
+    .review-item::after{
+        margin:0 24px;
+    }
+
+    .reviews-track{
+        animation-duration:45s;
+    }
+}
+
+/* Respecte les réglages d’accessibilité */
+@media(prefers-reduced-motion:reduce){
+    .reviews-track{
+        animation:none;
+    }
+
+    .reviews-marquee{
+        overflow-x:auto;
+    }
+}
+
+/* Présence locale */
+.home-local{
+    padding:110px 8%;
+}
+.home-local-inner{
+    display:grid;
+    grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr);
+    gap:80px;
+    align-items:center;
+    padding:70px;
+    border:1px solid rgba(199,187,232,.30);
+    border-radius:46px 70px 52px 64px;
+    background:rgba(255,255,255,.20);
+    box-shadow:0 24px 60px rgba(44,41,38,.035);
+}
+.home-local-copy{max-width:760px}
+.home-local-copy h2{
+    font-size:clamp(2.35rem,4vw,3.8rem);
+    margin-bottom:28px;
+}
+.home-local-copy p{margin-bottom:18px}
+.home-local-links{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    align-items:stretch;
+}
+.home-local-links .btn{width:100%;min-height:56px}
+@media(max-width:900px){
+    .home-local-inner{
+        grid-template-columns:1fr;
+        gap:38px;
+        padding:48px 34px;
+    }
+    .home-local-links{max-width:420px}
+}
+@media(max-width:700px){
+    .home-local{padding:80px 6%}
+    .home-local-inner{padding:38px 22px;border-radius:34px}
+}
+
+/* APPARITION AU SCROLL */
+
+/* Visible par défaut, même si JavaScript ne se charge pas */
+.reveal{
+    opacity:1;
+    transform:none;
+}
+
+/* L'animation n'est activée que lorsque JavaScript est disponible */
+.js .reveal{
+    opacity:0;
+    transform:translateY(42px);
+    transition:
+        opacity .9s ease,
+        transform .9s cubic-bezier(.22,.61,.36,1);
+    will-change:opacity, transform;
+}
+
+.js .reveal.reveal-left{
+    transform:translateX(-42px);
+}
+
+.js .reveal.reveal-right{
+    transform:translateX(42px);
+}
+
+.js .reveal.is-visible{
+    opacity:1;
+    transform:translate(0,0);
+}
+
+.reveal-delay-1{
+    transition-delay:.12s;
+}
+
+.reveal-delay-2{
+    transition-delay:.24s;
+}
+
+@media(prefers-reduced-motion:reduce){
+    .js .reveal,
+    .js .reveal.reveal-left,
+    .js .reveal.reveal-right{
+        opacity:1;
+        transform:none;
+        transition:none;
+    }
+}
+
+/* === Navigation commune === */
+.site-header{
+    min-height:82px;
+    padding:14px 7%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:30px;
+    border-bottom:1px solid rgba(44,41,38,.06);
+    position:sticky;
+    top:0;
+    z-index:2000;
+    background:rgba(248,243,236,.94);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+    box-shadow:0 8px 28px rgba(44,41,38,.045);
+}
+.site-brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-family:'Marcellus',serif;
+    letter-spacing:.04em;
+}
+.site-brand img{width:52px;height:52px;object-fit:contain}
+.site-nav{display:flex;align-items:center;justify-content:flex-end;gap:27px;font-size:.84rem}
+.site-nav a{position:relative;white-space:nowrap}
+.site-nav a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-7px;
+    width:0;
+    height:1px;
+    background:var(--lavender-light);
+    transition:.3s;
+}
+.site-nav a:hover::after,.site-nav a[aria-current="page"]::after{width:100%}
+
+.nav-dropdown{position:relative;display:flex;align-items:center}
+.nav-dropdown-toggle{display:inline-flex;align-items:center;gap:6px}
+.nav-chevron{font-size:.72em;line-height:1;transition:transform .25s ease}
+.nav-dropdown::after{
+    content:"";
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    height:18px;
+}
+.nav-dropdown-menu{
+    position:absolute;
+    top:calc(100% + 15px);
+    left:50%;
+    transform:translate(-50%,-8px);
+    min-width:225px;
+    padding:11px;
+    border:1px solid rgba(199,187,232,.38);
+    border-radius:20px;
+    background:rgba(248,243,236,.98);
+    box-shadow:0 18px 45px rgba(44,41,38,.10);
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+    transition:.25s ease;
+    z-index:2100;
+}
+.nav-dropdown-menu a{display:block;padding:10px 13px;border-radius:12px}
+.nav-dropdown-menu-tarifs{min-width:270px}
+.nav-dropdown-menu a::after{display:none}
+.nav-dropdown-menu a:hover{background:rgba(199,187,232,.14)}
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:focus-within .nav-dropdown-menu{
+    opacity:1;
+    visibility:visible;
+    pointer-events:auto;
+    transform:translate(-50%,0);
+}
+.nav-dropdown:hover .nav-chevron,
+.nav-dropdown:focus-within .nav-chevron{transform:rotate(180deg)}
+
+/* Même traitement des boutons que sur les autres pages */
+.btn{
+    position:relative;
+    overflow:hidden;
+    color:#fff;
+    font-family:'Inter',sans-serif;
+    text-align:center;
+    white-space:normal;
+    border:none;
+    background:linear-gradient(135deg,#c89ab1 0%,#a99bd2 100%);
+    box-shadow:0 12px 30px rgba(169,155,210,.28);
+}
+.btn::before{
+    content:"";
+    position:absolute;
+    top:-55%;
+    left:-75%;
+    width:42%;
+    height:210%;
+    background:linear-gradient(90deg,transparent,rgba(255,255,255,.72),transparent);
+    transform:rotate(20deg);
+    transition:left .65s ease;
+    pointer-events:none;
+}
+.btn:hover{
+    color:#fff;
+    transform:translateY(-3px);
+    box-shadow:0 18px 42px rgba(169,155,210,.36);
+}
+.btn:hover::before{left:135%}
+.btn-secondary{
+    color:#fff;
+    border:none;
+    background:linear-gradient(135deg,#c89ab1 0%,#a99bd2 100%);
+    box-shadow:0 12px 30px rgba(169,155,210,.28);
+    backdrop-filter:none;
+}
+
+@media(max-width:1000px){
+    .site-header{align-items:flex-start}
+    .site-nav{gap:15px;flex-wrap:wrap}
+}
+@media(max-width:700px){
+    .site-brand span{display:none}
+    .site-header{padding:12px 5%}
+    .site-nav{font-size:.72rem;gap:11px}
+    .nav-dropdown-menu{
+        left:0;
+        transform:translate(0,-8px);
+        min-width:210px;
+        max-width:min(290px,90vw);
+    }
+    .nav-dropdown-menu-tarifs{
+        left:auto;
+        right:0;
+        min-width:260px;
+    }
+    .nav-dropdown:hover .nav-dropdown-menu,
+    .nav-dropdown:focus-within .nav-dropdown-menu{transform:translate(0,0)}
+}
+  </style>
+  <script>
+   document.documentElement.classList.add("js");
+  </script>
+  <link href="https://www.latelierdemacete.fr/" rel="canonical"/>
+  <meta content="index,follow,max-image-preview:large" name="robots"/>
+  <meta content="#F5EFE6" name="theme-color"/>
+  <meta content="website" property="og:type"/>
+  <meta content="fr_FR" property="og:locale"/>
+  <meta content="L&rsquo;Atelier de Macete" property="og:site_name"/>
+  <meta content="L&rsquo;Atelier de Macete | Maquillage artistique &amp; ateliers cr&eacute;atifs en Alsace" property="og:title"/>
+  <meta content="Maquillage artistique, ateliers cr&eacute;atifs et exp&eacute;riences &eacute;v&eacute;nementielles &agrave; Strasbourg, dans le Bas-Rhin, le Haut-Rhin et partout en Alsace." property="og:description"/>
+  <meta content="https://www.latelierdemacete.fr/" property="og:url"/>
+  <meta content="https://www.latelierdemacete.fr/image-partage.webp" property="og:image"/>
+   <meta content="L’Atelier de Macete, maquillage artistique et ateliers créatifs en Alsace" property="og:image:alt"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="L&rsquo;Atelier de Macete | Maquillage artistique &amp; ateliers cr&eacute;atifs en Alsace" name="twitter:title"/>
+  <meta content="Maquillage artistique, ateliers cr&eacute;atifs et exp&eacute;riences &eacute;v&eacute;nementielles &agrave; Strasbourg, dans le Bas-Rhin, le Haut-Rhin et partout en Alsace." name="twitter:description"/>
+  <meta content="https://www.latelierdemacete.fr/image-partage.webp" name="twitter:image"/>
+   <meta content="L’Atelier de Macete, maquillage artistique et ateliers créatifs en Alsace" name="twitter:image:alt"/>
+  <script type="application/ld+json">
+   {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://www.latelierdemacete.fr/#entreprise",
+  "name": "L’Atelier de Macete",
+  "url": "https://www.latelierdemacete.fr/",
+  "logo": "https://www.latelierdemacete.fr/logo-atelier-macete.png",
+  "image": "https://www.latelierdemacete.fr/image-partage.webp",
+  "description": "Maquillage artistique pour enfants, ateliers créatifs et expériences événementielles à Strasbourg, dans le Bas-Rhin, le Haut-Rhin et partout en Alsace.",
+  "email": "latelierdemacete@gmail.com",
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Strasbourg"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Bas-Rhin"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Haut-Rhin"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Alsace"
+    }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/latelier_de_macete"
+  ]
+}
+  </script>
+ </head>
+ <body>
+  <header class="site-header">
+   <a aria-label="Retour &agrave; l'accueil" class="site-brand" href="index.html">
+    <img alt="Logo de L'Atelier de Macete" height="1254" src="logo-atelier-macete.png" width="1254"/>
+    <span>
+     L&rsquo;ATELIER DE MACETE
+    </span>
+   </a>
+   <nav aria-label="Navigation principale" class="site-nav">
+    <a aria-current="page" href="index.html">
+     Accueil
+    </a>
+    <div class="nav-dropdown">
+     <a class="nav-dropdown-toggle" href="maquillage-artistique.html">
+      Maquillage artistique
+      <span aria-hidden="true" class="nav-chevron">
+       ⌄
+      </span>
+     </a>
+     <div class="nav-dropdown-menu">
+      <a href="maquillage-artistique.html">
+       Maquillage artistique
+      </a>
+      <a href="anniversaire-enfant.html">
+       Anniversaire enfant
+      </a>
+      <a href="belly-painting.html">
+       Belly painting
+      </a>
+     </div>
+    </div>
+    <div class="nav-dropdown">
+      <a class="nav-dropdown-toggle" href="ateliers-creatifs.html">
+       Ateliers cr&eacute;atifs
+       <span aria-hidden="true" class="nav-chevron">⌄</span>
+      </a>
+      <div class="nav-dropdown-menu">
+       <a href="ateliers-creatifs.html">Ateliers cr&eacute;atifs</a>
+       <a href="traces-magiques.html">Traces Magiques</a>
+       <a href="couleurs-de-soi.html">Couleurs de Soi</a>
+      </div>
+     </div>
+    <a href="bar-a-paillettes.html">
+     Bar &agrave; paillettes
+    </a>
+    <div class="nav-dropdown">
+     <a class="nav-dropdown-toggle" href="tarifs.html">
+      Tarifs
+      <span aria-hidden="true" class="nav-chevron">
+       ⌄
+      </span>
+     </a>
+     <div class="nav-dropdown-menu nav-dropdown-menu-tarifs">
+      <a href="tarifs.html">
+       Tous les tarifs
+      </a>
+      <a href="tarifs-anniversaire-enfant.html">
+       Anniversaire enfant
+      </a>
+       <a href="tarifs-belly-painting.html">
+        Belly painting
+       </a>
+      <a href="tarifs-evenements.html">
+       &Eacute;v&eacute;nements
+      </a>
+      <a href="tarifs-mariages.html">
+       Mariages
+      </a>
+      <a href="tarifs-atelier-glitter-maquillage.html">
+       Atelier glitter &amp; maquillage
+      </a>
+       <a href="tarifs-ateliers-creatifs-artistiques.html">
+        Ateliers cr&eacute;atifs &amp; artistiques
+       </a>
+      <a href="tarifs-traces-magiques.html">
+       Traces Magiques
+      </a>
+      <a href="tarifs-couleurs-de-soi.html">
+       Couleurs de Soi
+      </a>
+     </div>
+    </div>
+    <a href="contact.html">
+     Contact
+    </a>
+   </nav>
+  </header>
+  <main>
+   <section class="hero">
+    <div class="container hero-grid">
+     <header class="hero-text">
+      <div class="kicker">
+       L&rsquo;ATELIER DE MACETE
+      </div>
+      <h1>
+       Un univers o&ugrave; l&rsquo;art
+       <br/>
+       <span class="accent">
+        r&eacute;v&egrave;le, relie
+       </span>
+       <br/>
+       et transforme
+      </h1>
+      <p class="hero-sub">
+       Maquillage artistique, ateliers cr&eacute;atifs et exp&eacute;riences &eacute;v&eacute;nementielles en Alsace.
+      </p>
+      <p class="hero-sub">
+       Ici, chaque cr&eacute;ation est pens&eacute;e comme une rencontre :
+            avec l&rsquo;imaginaire, avec les autres, ou avec une part de soi.
+      </p>
+      <div class="btn-group">
+       <a class="btn btn-primary" href="#univers">
+        Explorer les univers
+       </a>
+       <a class="btn btn-secondary" href="contact.html">
+        Parlons de votre projet
+       </a>
+      </div>
+     </header>
+     <div class="hero-art">
+      <img alt="Julie, maquilleuse artistique et cr&eacute;atrice de L'Atelier de Macete en Alsace" class="hero-main" decoding="sync" fetchpriority="high" height="942" sizes="(max-width:768px) 290px, (max-width:1100px) 380px, 650px" src="julie-maquilleuse-artistique-alsace.webp" srcset="
+        julie-maquilleuse-artistique-alsace-mobile.webp 700w,
+        julie-maquilleuse-artistique-alsace.webp 813w
+    " width="813"/>
+      <img alt="" aria-hidden="true" class="hero-contour" src="contour-entete.png"/>
+     </div>
+    </div>
+   </section>
+   <section aria-labelledby="univers-title" class="univers" id="univers">
+    <div class="container univers-header">
+     <h2 id="univers-title">
+      Explorer les univers
+     </h2>
+     <p>
+      Trois portes d&rsquo;entr&eacute;e vers un m&ecirc;me univers cr&eacute;atif,
+        o&ugrave; l&rsquo;art devient exp&eacute;rience.
+     </p>
+    </div>
+    <article class="universe-block universe-one reveal reveal-left">
+     <div class="universe-image">
+      <img alt="Maquillage artistique enfant papillon multicolore r&eacute;alis&eacute; par L'Atelier de Macete en Alsace" decoding="async" height="2048" loading="lazy" sizes="(max-width:900px) 88vw, calc((84vw - 70px) / 2)" src="maquillage-artistique-enfant-papillon-alsace.webp" srcset="
+        maquillage-artistique-enfant-papillon-alsace-mobile.webp 700w,
+        maquillage-artistique-enfant-papillon-alsace.webp 1537w
+    " width="1537"/>
+     </div>
+     <div class="universe-text">
+      <div class="universe-label">
+       &Eacute;merveiller
+      </div>
+      <h2>
+       Maquillage artistique
+      </h2>
+      <p>
+       Donner forme &agrave; l&rsquo;imaginaire. Des cr&eacute;ations pens&eacute;es pour &eacute;merveiller les enfants,
+                faire na&icirc;tre des personnages, des animaux, des fleurs ou des mondes fantastiques.
+      </p>
+      <p>
+       Une animation douce, soign&eacute;e et professionnelle pour anniversaires, f&ecirc;tes d&rsquo;&eacute;cole,
+                kermesses, &eacute;v&eacute;nements familiaux, collectivit&eacute;s et entreprises.
+      </p>
+      <a class="universe-link" href="maquillage-artistique.html">
+       D&eacute;couvrir le maquillage artistique
+      </a>
+     </div>
+    </article>
+    <article class="universe-block universe-two reverse reveal reveal-right">
+     <div class="universe-text">
+      <div class="universe-label">
+       Cr&eacute;er
+      </div>
+      <h2>
+       Ateliers cr&eacute;atifs
+      </h2>
+      <p>
+       Explorer, ressentir, exprimer. Des ateliers artistiques con&ccedil;us comme des espaces
+                de d&eacute;couverte, de lien et d&rsquo;expression personnelle.
+      </p>
+      <p>
+       Traces Magiques, Couleurs de Soi, ateliers sensoriels ou projets interg&eacute;n&eacute;rationnels :
+                chaque format s&rsquo;adapte au public, au lieu et &agrave; l&rsquo;intention du projet.
+      </p>
+      <a class="universe-link" href="ateliers-creatifs.html">
+       Explorer les ateliers
+      </a>
+     </div>
+     <div class="universe-image">
+      <img alt="Atelier cr&eacute;atif Couleurs de Soi anim&eacute; par L'Atelier de Macete &agrave; Strasbourg" decoding="async" height="2047" loading="lazy" sizes="(max-width:900px) 88vw, calc((84vw - 70px) / 2)" src="atelier-creatif-couleurs-de-soi-strasbourg.webp" srcset="
+        atelier-creatif-couleurs-de-soi-strasbourg-mobile.webp 700w,
+        atelier-creatif-couleurs-de-soi-strasbourg.webp 1921w
+    " width="1921"/>
+     </div>
+    </article>
+    <article class="universe-block universe-three reveal reveal-left">
+     <div class="universe-image">
+      <img alt="Animation &eacute;v&eacute;nementielle avec bar &agrave; paillettes et maquillage artistique dans le Bas-Rhin" decoding="async" height="1402" loading="lazy" sizes="(max-width:900px) 88vw, calc((84vw - 70px) / 2)" src="animation-evenementielle-bar-a-paillettes-alsace.webp" srcset="
+        animation-evenementielle-bar-a-paillettes-alsace-mobile.webp 700w,
+        animation-evenementielle-bar-a-paillettes-alsace.webp 1122w
+    " width="1122"/>
+     </div>
+     <div class="universe-text">
+      <div class="universe-label">
+       Partager
+      </div>
+      <h2>
+       Exp&eacute;riences &eacute;v&eacute;nementielles
+      </h2>
+      <p>
+       Sublimer l&rsquo;instant partag&eacute;. Bar &agrave; paillettes, tatouages &eacute;ph&eacute;m&egrave;res, glitter,
+                maquillages festifs ou animations sur mesure.
+      </p>
+      <p>
+       Pour EVJF, mariages, soir&eacute;es priv&eacute;es, &eacute;v&eacute;nements professionnels ou temps forts
+                associatifs, l&rsquo;animation devient une exp&eacute;rience visuelle et sensible.
+      </p>
+      <a class="universe-link" href="contact.html">
+       Imaginer une animation
+      </a>
+     </div>
+    </article>
+   </section>
+   <section aria-labelledby="google-reviews-title" class="google-reviews reveal">
+    <div class="google-reviews-header">
+     <div aria-hidden="true" class="google-stars">
+      &starf;&starf;&starf;&starf;&starf;
+     </div>
+     <h2 id="google-reviews-title">
+      5,0 sur Google
+     </h2>
+     <p class="google-reviews-count">
+      Merci pour votre confiance
+     </p>
+    </div>
+    <div class="reviews-marquee">
+     <div class="reviews-track">
+      <!-- PREMIÈRE COPIE -->
+      <div class="reviews-group">
+       <div class="review-item">
+        <span class="stars">
+         &starf;&starf;&starf;&starf;&starf;
+        </span>
+        Maquilleuse tr&egrave;s cr&eacute;ative, souriante et professionnelle.
+       </div>
+       <div class="review-item">
+        <span class="stars">
+         &starf;&starf;&starf;&starf;&starf;
+        </span>
+        Adultes et enfants &eacute;taient combl&eacute;s.
+       </div>
+       <div class="review-item">
+        <span class="stars">
+         &starf;&starf;&starf;&starf;&starf;
+        </span>
+        Julie a &eacute;t&eacute; au top, &agrave; l&rsquo;&eacute;coute et pr&eacute;venante.
+       </div>
+       <div class="review-item">
+        <span class="stars">
+         &starf;&starf;&starf;&starf;&starf;
+        </span>
+        Dessins magnifiques et large choix de mod&egrave;les.
+       </div>
+       <div class="review-item">
+        <span class="stars">
+         &starf;&starf;&starf;&starf;&starf;
+        </span>
+        Les enfants &eacute;taient ravis.
+       </div>
+       <div class="review-item">
+        <span class="stars">
+         &starf;&starf;&starf;&starf;&starf;
+        </span>
+        Professionnelle douce, au top.
+       </div>
+       <div class="review-item">
+        <span class="stars">
+         &starf;&starf;&starf;&starf;&starf;
+        </span>
+        Une artiste talentueuse, passionn&eacute;e et &agrave; l&rsquo;&eacute;coute.
+       </div>
+       <div class="review-item">
+        <span class="stars">
+         &starf;&starf;&starf;&starf;&starf;
+        </span>
+        Les enfants ont tous &eacute;t&eacute; maquill&eacute;s et ravis.
+       </div>
+       <div class="review-item">
+        <span class="stars">
+         &starf;&starf;&starf;&starf;&starf;
+        </span>
+        Une r&eacute;alisation rapide et tr&egrave;s belle.
+       </div>
+       <div class="review-item">
+        <span class="stars">
+         &starf;&starf;&starf;&starf;&starf;
+        </span>
+        Une prestation qui a combl&eacute; petits et grands.
+       </div>
+      </div>
+      <!-- COPIE IDENTIQUE POUR UNE BOUCLE CONTINUE -->
+      <div aria-hidden="true" class="reviews-group">
+       <div class="review-item">
+        <span class="stars">
+         &starf;&starf;&starf;&starf;&starf;
+        </span>
+        Maquilleuse tr&egrave;s cr&eacute;ative, souriante et professionnelle.
+       </div>
+       <div class="review-item">
+        <span class="stars">
+         &starf;&starf;&starf;&starf;&starf;
+        </span>
+        Adultes et enfants &eacute;taient combl&eacute;s.
+       </div>
+       <div class="review-item">
+        <span class="stars">
+         &starf;&starf;&starf;&starf;&starf;
+        </span>
+        Julie a &eacute;t&eacute; au top, &agrave; l&rsquo;&eacute;coute et pr&eacute;venante.
+       </div>
+       <div class="review-item">
+        <span class="stars">
+         &starf;&starf;&starf;&starf;&starf;
+        </span>
+        Dessins magnifiques et large choix de mod&egrave;les.
+       </div>
+       <div class="review-item">
+        <span class="stars">
+         &starf;&starf;&starf;&starf;&starf;
+        </span>
+        Les enfants &eacute;taient ravis.
+       </div>
+       <div class="review-item">
+        <span class="stars">
+         &starf;&starf;&starf;&starf;&starf;
+        </span>
+        Professionnelle douce, au top.
+       </div>
+       <div class="review-item">
+        <span class="stars">
+         &starf;&starf;&starf;&starf;&starf;
+        </span>
+        Une artiste talentueuse, passionn&eacute;e et &agrave; l&rsquo;&eacute;coute.
+       </div>
+       <div class="review-item">
+        <span class="stars">
+         &starf;&starf;&starf;&starf;&starf;
+        </span>
+        Les enfants ont tous &eacute;t&eacute; maquill&eacute;s et ravis.
+       </div>
+       <div class="review-item">
+        <span class="stars">
+         &starf;&starf;&starf;&starf;&starf;
+        </span>
+        Une r&eacute;alisation rapide et tr&egrave;s belle.
+       </div>
+       <div class="review-item">
+        <span class="stars">
+         &starf;&starf;&starf;&starf;&starf;
+        </span>
+        Une prestation qui a combl&eacute; petits et grands.
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section aria-labelledby="home-local-title" class="home-local reveal">
+    <div class="container home-local-inner">
+     <div class="home-local-copy">
+      <div class="manifesto-label">
+       L&rsquo;Atelier en Alsace
+      </div>
+      <h2 id="home-local-title">
+       Des exp&eacute;riences cr&eacute;atives &agrave; Strasbourg et partout en Alsace
+      </h2>
+      <p>
+       L&rsquo;Atelier de Macete se d&eacute;place pour des anniversaires, mariages, &eacute;v&eacute;nements
+                associatifs ou professionnels, ainsi que pour des ateliers cr&eacute;atifs aupr&egrave;s
+                de structures culturelles, sociales et &eacute;ducatives.
+      </p>
+      <p>
+       Les prestations peuvent &ecirc;tre organis&eacute;es &agrave; Strasbourg et dans l&rsquo;Eurom&eacute;tropole,
+                &agrave; Haguenau, Brumath, Saverne, Obernai, S&eacute;lestat, Colmar, Mulhouse et plus largement
+                dans le Bas-Rhin et le Haut-Rhin.
+      </p>
+     </div>
+     <div class="home-local-links">
+      <a class="btn btn-primary" href="tarifs.html">
+       D&eacute;couvrir les tarifs
+      </a>
+      <a class="btn btn-primary" href="contact.html">
+       Pr&eacute;senter votre projet
+      </a>
+     </div>
+    </div>
+   </section>
+   <section aria-labelledby="manifesto-title" class="manifesto reveal">
+    <div class="manifesto-box">
+     <div class="manifesto-label">
+      Le manifeste Macete
+     </div>
+     <h2 id="manifesto-title">
+      Cr&eacute;er, c'est offrir une &eacute;motion.
+     </h2>
+     <p>
+      L&rsquo;Atelier de Macete n&rsquo;est pas une simple prestation.
+            C&rsquo;est une maison cr&eacute;ative en mouvement.
+     </p>
+     <p>
+      Chaque projet na&icirc;t d&rsquo;une rencontre, d&rsquo;une &eacute;motion ou d&rsquo;un imaginaire &agrave; r&eacute;v&eacute;ler.
+            L'objectif n'est pas seulement de cr&eacute;er quelque chose de beau,
+            mais d'offrir un moment de partage, d'&eacute;merveillement ou d'expression
+            qui laisse un souvenir.
+     </p>
+     <h3 class="manifesto-name">
+      Derri&egrave;re Macete se cache Julie.
+     </h3>
+     <p>
+      Maman de trois enfants, j'ai choisi de donner une place centrale
+            &agrave; ce qui m'anime depuis toujours&nbsp;: cr&eacute;er.
+     </p>
+     <p>
+      Aussi loin que remontent mes souvenirs,
+            j'ai toujours dessin&eacute;, peint, imagin&eacute; et fabriqu&eacute;.
+            Aujourd'hui, je mets cette sensibilit&eacute; au service des autres,
+            &agrave; travers le maquillage artistique,
+            les ateliers cr&eacute;atifs et les exp&eacute;riences &eacute;v&eacute;nementielles.
+     </p>
+     <p>
+      J'esp&egrave;re que chacune de mes cr&eacute;ations pourra,
+            le temps d'un instant,
+            susciter l'&eacute;merveillement, la joie,
+            la curiosit&eacute; ou simplement offrir une parenth&egrave;se de douceur
+            &agrave; celles et ceux qui y seront sensibles.
+     </p>
+    </div>
+   </section>
+   <section aria-labelledby="contact-title" class="final-cta reveal" id="contact">
+    <div class="final-cta-content">
+     <div class="final-cta-label">
+      Une id&eacute;e en t&ecirc;te ?
+     </div>
+     <h2 id="contact-title">
+      Imaginons votre projet ensemble
+     </h2>
+     <p>
+      Anniversaire, atelier cr&eacute;atif, &eacute;v&eacute;nement professionnel
+            ou projet artistique singulier&nbsp;:
+            pr&eacute;sentez-moi votre id&eacute;e afin que nous imaginions
+            une proposition adapt&eacute;e &agrave; votre univers.
+     </p>
+     <a class="btn btn-primary" href="contact.html">
+      Parlons de votre projet
+     </a>
+     <div class="final-cta-links">
+      <a href="mailto:latelierdemacete@gmail.com">
+       latelierdemacete@gmail.com
+      </a>
+      <a href="https://www.instagram.com/latelier_de_macete" rel="noopener noreferrer" target="_blank">
+       Instagram
+      </a>
+     </div>
+    </div>
+   </section>
+  </main>
+  <script>
+   document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll(".reveal");
+
+    if (!("IntersectionObserver" in window)) {
+        elements.forEach(function (element) {
+            element.classList.add("is-visible");
+        });
+        return;
+    }
+
+    const observer = new IntersectionObserver(
+        function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("is-visible");
+                    observer.unobserve(entry.target);
+                }
+            });
+        },
+        {
+            threshold:0.10,
+            rootMargin:"0px 0px -40px 0px"
+        }
+    );
+
+    elements.forEach(function (element) {
+        observer.observe(element);
+    });
+});
+  </script>
+ </body>
+</html>
