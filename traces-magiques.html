@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Traces Magiques | Atelier d&rsquo;&eacute;veil artistique petite enfance en Alsace
+  </title>
+  <meta content="Traces Magiques : atelier d&rsquo;&eacute;veil artistique pour la petite enfance autour des empreintes, couleurs et gestes. Fresque collective personnalis&eacute;e pour cr&egrave;ches, RPE, MAM, LAEP et structures en Alsace." name="description"/>
+  <meta content="index,follow,max-image-preview:large" name="robots"/>
+  <link href="https://www.latelierdemacete.fr/traces-magiques.html" rel="canonical"/>
+
+<meta name="theme-color" content="#F5EFE6">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="L’Atelier de Macete">
+<meta property="og:title" content="Traces Magiques | Atelier d’éveil artistique petite enfance en Alsace">
+<meta property="og:description" content="Un atelier d’éveil artistique pour les 0–3 ans autour des empreintes, des couleurs et d’une fresque collective personnalisée.">
+<meta property="og:url" content="https://www.latelierdemacete.fr/traces-magiques.html">
+<meta property="og:image" content="https://www.latelierdemacete.fr/traces-magiques-paon.webp">
+<meta property="og:image:alt" content="Paon créé avec des empreintes de mains lors d’un atelier Traces Magiques">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Traces Magiques | L’Atelier de Macete">
+<meta name="twitter:description" content="Atelier d’éveil artistique petite enfance autour des empreintes, couleurs et fresques collectives en Alsace.">
+<meta name="twitter:image" content="https://www.latelierdemacete.fr/traces-magiques-paon.webp">
+<meta name="twitter:image:alt" content="Paon créé avec des empreintes de mains lors d’un atelier Traces Magiques">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Service",
+  "@id":"https://www.latelierdemacete.fr/traces-magiques.html#service",
+  "name":"Traces Magiques",
+  "url":"https://www.latelierdemacete.fr/traces-magiques.html",
+  "description":"Atelier d’éveil artistique pour la petite enfance autour des empreintes, couleurs et fresques collectives personnalisées.",
+  "provider":{
+    "@type":"LocalBusiness",
+    "@id":"https://www.latelierdemacete.fr/#entreprise",
+    "name":"L’Atelier de Macete",
+    "url":"https://www.latelierdemacete.fr/"
+  },
+  "areaServed":["Strasbourg","Bas-Rhin","Haut-Rhin","Alsace"],
+  "audience":{"@type":"Audience","audienceType":"Petite enfance, 0 à 3 ans"},
+  "image":"https://www.latelierdemacete.fr/traces-magiques-paon.webp"
+}
+</script>
+
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..700,0..100,0..1&amp;family=Inter:wght@300;400;500;600&amp;family=Marcellus&amp;display=swap" rel="stylesheet"/>
+  <style>
+   :root{
+  --cream:#F5EFE6;--rose:#C89AA4;--lavender:#A59BBE;
+  --lavender-light:#C7BBE8;--bronze:#8C735A;
+  --text:#2C2926;--muted:#6F675F;--white:#fff
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',sans-serif;color:var(--text);line-height:1.7;
+  background:
+    radial-gradient(circle at 12% 18%,rgba(200,154,164,.14),transparent 24%),
+    radial-gradient(circle at 85% 30%,rgba(165,155,190,.12),transparent 22%),
+    linear-gradient(135deg,#f8f3ec,#f4eee7);
+}
+img{display:block;max-width:100%;height:auto}
+a{text-decoration:none;color:inherit}
+h1,h2{
+  font-family:'Fraunces',serif;font-weight:500;line-height:1.04;
+  font-variation-settings:"SOFT" 40,"WONK" 1
+}
+h3{font-family:'Marcellus',serif;font-weight:400}
+p{color:var(--muted);font-size:1.03rem}
+.container{width:min(1180px,90%);margin:auto}
+
+/* Navigation */
+.site-header{
+  min-height:82px;padding:14px 7%;display:flex;align-items:center;
+  justify-content:space-between;gap:30px;border-bottom:1px solid rgba(44,41,38,.06);
+  position:sticky;top:0;z-index:2000;background:rgba(248,243,236,.94);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  box-shadow:0 8px 28px rgba(44,41,38,.045)
+}
+.site-brand{
+  display:flex;align-items:center;gap:12px;font-family:'Marcellus',serif;
+  letter-spacing:.04em;flex:0 0 auto
+}
+.site-brand img{width:52px;height:52px;object-fit:contain}
+.site-nav{display:flex;align-items:center;justify-content:flex-end;gap:27px;font-size:.84rem}
+.site-nav a{position:relative;white-space:nowrap}
+.site-nav>a::after,.nav-dropdown-toggle::after{
+  content:"";position:absolute;left:0;bottom:-7px;width:0;height:1px;
+  background:var(--lavender-light);transition:.3s
+}
+.site-nav>a:hover::after,.nav-dropdown-toggle:hover::after,
+.nav-dropdown-toggle[aria-current="page"]::after{width:100%}
+.nav-dropdown{position:relative}
+
+/* Maintient le survol entre l'onglet principal et son sous-menu */
+.nav-dropdown::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  top:100%;
+  height:18px;
+}
+.nav-dropdown-toggle{display:inline-flex;align-items:center;gap:6px}
+.nav-chevron{font-size:.65em;transition:transform .25s ease}
+.nav-dropdown-menu{
+  position:absolute;top:calc(100% + 14px);left:50%;transform:translate(-50%,-8px);
+  min-width:235px;padding:12px;background:rgba(247,241,234,.98);
+  border:1px solid rgba(199,187,232,.38);border-radius:20px;
+  box-shadow:0 18px 45px rgba(44,41,38,.10);
+  opacity:0;visibility:hidden;pointer-events:none;transition:.25s ease;z-index:1000
+}
+.nav-dropdown-menu a{display:block;padding:11px 14px;border-radius:12px;white-space:nowrap}
+.nav-dropdown-menu a:hover,.nav-dropdown-menu a[aria-current="page"]{background:rgba(199,187,232,.13)}
+.nav-dropdown:hover .nav-dropdown-menu,.nav-dropdown:focus-within .nav-dropdown-menu{
+  opacity:1;visibility:visible;pointer-events:auto;transform:translate(-50%,0)
+}
+.nav-dropdown:hover .nav-chevron,.nav-dropdown:focus-within .nav-chevron{transform:rotate(180deg)}
+.nav-dropdown-menu-tarifs{min-width:270px}
+
+/* Commun */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;padding:17px 30px;
+  border-radius:999px;font-weight:600;line-height:1.15;position:relative;overflow:hidden;
+  color:#fff;background:linear-gradient(135deg,#c89ab1 0%,#a99bd2 100%);
+  box-shadow:0 12px 30px rgba(169,155,210,.28);
+  transition:transform .3s ease,box-shadow .3s ease;
+  font-family:'Inter',sans-serif;text-align:center;white-space:normal
+}
+.btn::before{
+  content:"";position:absolute;top:-55%;left:-75%;width:42%;height:210%;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.72),transparent);
+  transform:rotate(20deg);transition:left .65s ease;pointer-events:none
+}
+.btn:hover{transform:translateY(-3px);box-shadow:0 18px 42px rgba(169,155,210,.36)}
+.btn:hover::before{left:135%}
+.eyebrow{
+  font-family:'Nothing You Could Do',cursive;color:var(--rose);
+  font-size:1.25rem;margin-bottom:12px
+}
+section{padding:86px 0}
+.section-head{max-width:760px;margin:0 auto 48px;text-align:center}
+.section-head h2{font-size:clamp(2.15rem,4vw,3.8rem);margin-bottom:18px}
+
+/* Hero */
+.hero{padding:72px 0 86px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:.9fr 1.1fr;align-items:center;gap:72px}
+.hero-copy{position:relative;padding:64px 54px 66px;isolation:isolate}
+.hero-copy::before{
+  content:"";position:absolute;z-index:-1;inset:-34px -58px -38px -42px;
+  background:rgba(255,255,255,.58);border:1px solid rgba(200,154,164,.18);
+  border-radius:40% 60% 47% 53% / 52% 43% 57% 48%;
+  box-shadow:0 24px 60px rgba(44,41,38,.055)
+}
+.hero h1{font-size:clamp(2.55rem,4.5vw,4.55rem);margin-bottom:22px}
+.hero-copy p{max-width:520px;font-size:1rem}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.hero-visual img{
+  width:100%;aspect-ratio:1.12/1;object-fit:cover;
+  border-radius:45% 55% 48% 52% / 42% 48% 52% 58%;
+  box-shadow:0 24px 60px rgba(44,41,38,.13)
+}
+
+/* Présentation */
+.intro-grid,.fresco-grid{display:grid;grid-template-columns:1fr 1fr;gap:58px;align-items:center}
+.soft-card{
+  padding:38px;border-radius:34px;background:rgba(255,255,255,.52);
+  border:1px solid rgba(199,187,232,.28);box-shadow:0 18px 45px rgba(44,41,38,.05)
+}
+.soft-card h3{font-size:1.45rem;margin-bottom:12px}
+.points{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:26px}
+.point{padding:22px;border-radius:26px;background:rgba(255,255,255,.48)}
+.point h3{
+  font-family:'Nothing You Could Do',cursive;color:var(--bronze);
+  font-size:1.22rem;margin-bottom:6px
+}
+.content-visual{
+  overflow:hidden;background:transparent;box-shadow:0 20px 48px rgba(44,41,38,.09)
+}
+.content-visual img{width:100%;height:100%;object-fit:cover;object-position:center}
+.visual-poisson{
+  width:min(470px,100%);aspect-ratio:1.35/1;margin:34px auto 0;
+  border-radius:46% 54% 42% 58% / 52% 42% 58% 48%
+}
+
+/* Structures + poisson */
+.audiences-layout{
+  display:grid;grid-template-columns:1.18fr .82fr;gap:42px;align-items:center
+}
+.audiences{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.audience{
+  padding:30px;border-radius:30px;background:rgba(255,255,255,.55);
+  border:1px solid rgba(200,154,164,.16)
+}
+.audience h3{
+  font-family:'Nothing You Could Do',cursive;color:var(--lavender);
+  font-size:1.35rem;margin-bottom:8px
+}
+.audiences-single-visual{
+  width:min(390px,100%);aspect-ratio:1.18/1;margin:auto;overflow:hidden;
+  border-radius:46% 54% 43% 57% / 51% 43% 57% 49%;
+  box-shadow:0 20px 48px rgba(44,41,38,.08);
+  background:transparent
+}
+.audiences-single-visual .content-visual{
+  width:100%;height:100%;margin:0;border-radius:0;box-shadow:none;background:transparent
+}
+.audiences-single-visual img{
+  width:100%;height:100%;object-fit:cover;object-position:50% 50%;
+  transform:scale(1.015)
+}
+
+/* Thèmes saisonniers */
+.themes-section{padding:92px 0}
+.season-grid{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:24px;align-items:stretch
+}
+.season-card{
+  min-height:330px;padding:58px 46px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;overflow:hidden;
+  background:rgba(255,255,255,.55);
+  border:1px solid rgba(199,187,232,.28);
+  box-shadow:0 16px 40px rgba(44,41,38,.045);
+  border-radius:42% 58% 48% 52% / 54% 44% 56% 46%
+}
+.season-card:nth-child(2n){
+  border-radius:54% 46% 56% 44% / 45% 55% 45% 55%
+}
+.season-card:nth-child(3n){
+  border-radius:47% 53% 43% 57% / 57% 45% 55% 43%
+}
+.season-card-custom{
+  background:linear-gradient(135deg,rgba(200,154,164,.12),rgba(165,155,190,.12));
+  border-radius:55% 45% 49% 51% / 48% 57% 43% 52%
+}
+.season-months{
+  margin-bottom:11px;color:var(--rose);font-size:.76rem;font-weight:600;
+  letter-spacing:.07em;text-transform:uppercase;line-height:1.4
+}
+.season-card h3{
+  margin-bottom:10px;font-family:'Nothing You Could Do',cursive;
+  color:var(--bronze);font-size:1.38rem;line-height:1.2
+}
+.season-card p{
+  width:100%;max-width:250px;margin:0 auto;
+  font-size:.91rem;line-height:1.52;text-align:center
+}
+.cycle-note{
+  width:min(920px,100%);min-height:350px;margin:48px auto 0;
+  padding:76px 105px;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;text-align:center;overflow:hidden;
+  background:rgba(255,255,255,.5);
+  border-radius:43% 57% 52% 48% / 56% 45% 55% 44%
+}
+.cycle-note h3{
+  max-width:650px;margin-bottom:12px;font-family:'Fraunces',serif;
+  font-size:clamp(1.65rem,3vw,2.35rem);font-weight:500;line-height:1.15
+}
+.cycle-note p{
+  max-width:650px;margin:0 auto;font-size:.95rem;line-height:1.58;text-align:center
+}
+
+/* Dernier poussin */
+.fresco-grid{
+  display:grid;grid-template-columns:.82fr 1.18fr;gap:60px;
+  align-items:center;max-width:1180px;text-align:left
+}
+.single-poussin{
+  overflow:hidden;aspect-ratio:1.18/1;border-radius:34px 56px 40px 50px;
+  box-shadow:0 20px 48px rgba(44,41,38,.08)
+}
+.single-poussin img{width:100%;height:100%;display:block;object-fit:cover;object-position:center}
+
+/* CTA */
+.cta{text-align:center;padding:90px 0 100px}
+.cta-box{
+  max-width:900px;margin:auto;padding:70px 10%;
+  background:rgba(255,255,255,.58);
+  border-radius:42% 58% 48% 52% / 56% 44% 56% 44%;
+  box-shadow:0 22px 55px rgba(44,41,38,.06)
+}
+.cta h2{font-size:clamp(2rem,4vw,3.5rem);margin-bottom:18px}
+.cta .btn{margin-top:25px}
+footer{
+  padding:32px 5%;text-align:center;border-top:1px solid rgba(44,41,38,.06);
+  color:var(--muted);font-size:.88rem
+}
+
+/* Tablette */
+@media(max-width:1000px){
+  .site-header{align-items:flex-start}
+  .site-nav{gap:15px;flex-wrap:wrap}
+  .hero-grid,.intro-grid,.fresco-grid,.audiences-layout{grid-template-columns:1fr}
+  .hero-grid{gap:48px}
+  .hero-copy{max-width:760px}
+  .audiences-single-visual{width:min(500px,86%);margin-top:20px}
+  .audiences{grid-template-columns:repeat(3,1fr)}
+  .season-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+  .season-card{
+    min-height:345px;padding:62px 52px
+  }
+  .season-card p{max-width:280px}
+  .cycle-note{min-height:370px;padding:78px 90px}
+  .single-poussin{width:min(560px,90%);margin:auto}
+}
+
+/* Mobile */
+@media(max-width:700px){
+  .site-header{padding:12px 5%;gap:12px}
+  .site-brand span{display:none}
+  .site-nav{font-size:.72rem;gap:10px 12px}
+  .nav-dropdown-menu{
+    left:0;transform:translate(0,-8px);min-width:215px;
+    max-width:min(290px,90vw)
+  }
+  .nav-dropdown:hover .nav-dropdown-menu,
+  .nav-dropdown:focus-within .nav-dropdown-menu{transform:translate(0,0)}
+  .nav-dropdown-menu-tarifs{left:auto;right:0;min-width:260px}
+  .hero{padding:52px 0 66px}
+  .hero-grid{gap:44px}
+  .hero-copy{padding:52px 38px 56px;max-width:94%;margin:0 auto}
+  .hero-copy::before{inset:-18px -12px -20px -12px}
+  .hero h1{font-size:clamp(2.25rem,11vw,3.1rem)}
+  .hero-copy p{font-size:.96rem}
+  .hero-actions{flex-direction:column;align-items:stretch}
+  .hero-actions .btn{width:100%}
+  section{padding:64px 0}
+  .points{grid-template-columns:1fr}
+  .audiences{grid-template-columns:1fr}
+  .audiences-single-visual{width:92%;aspect-ratio:1.18/1}
+  .themes-section{padding:68px 0}
+  .season-grid{grid-template-columns:1fr;gap:20px}
+  .season-card,
+  .season-card:nth-child(2n),
+  .season-card:nth-child(3n),
+  .season-card-custom{
+    width:min(390px,100%);min-height:330px;margin:0 auto;
+    padding:58px 48px;
+  }
+  .season-card p{max-width:260px;font-size:.9rem;line-height:1.5}
+  .cycle-note{
+    width:100%;min-height:390px;padding:78px 50px;
+    border-radius:40% 60% 48% 52% / 54% 44% 56% 46%
+  }
+  .cycle-note h3{font-size:1.75rem;max-width:290px}
+  .cycle-note p{max-width:285px;font-size:.91rem;line-height:1.52}
+  .single-poussin{width:94%}
+  .cta{padding:68px 0 78px}
+  .cta-box{padding:58px 10%;border-radius:36px}
+}
+
+/* Très petits écrans */
+@media(max-width:420px){
+  .container{width:92%}
+  .site-header{position:sticky}
+  .site-nav{gap:8px 10px;font-size:.68rem}
+  .hero-copy{padding:48px 32px 52px}
+  .season-card,
+  .season-card:nth-child(2n),
+  .season-card:nth-child(3n),
+  .season-card-custom{
+    width:100%;min-height:345px;padding:62px 42px
+  }
+  .cycle-note{min-height:410px;padding:82px 42px}
+}
+  </style>
+ </head>
+ <body>
+  <header class="site-header">
+   <a aria-label="Retour &agrave; l'accueil" class="site-brand" href="index.html">
+    <img alt="Logo de L&rsquo;Atelier de Macete" src="logo-atelier-macete.png"/>
+    <span>
+     L&rsquo;ATELIER DE MACETE
+    </span>
+   </a>
+   <nav aria-label="Navigation principale" class="site-nav">
+    <a href="index.html">
+     Accueil
+    </a>
+    <div class="nav-dropdown">
+     <a class="nav-dropdown-toggle" href="maquillage-artistique.html">
+      Maquillage artistique
+      <span class="nav-chevron">
+       ⌄
+      </span>
+     </a>
+     <div class="nav-dropdown-menu">
+      <a href="maquillage-artistique.html">
+       Maquillage artistique
+      </a>
+      <a href="anniversaire-enfant.html">
+       Anniversaire enfant
+      </a>
+      <a href="belly-painting.html">
+       Belly painting
+      </a>
+     </div>
+    </div>
+    <div class="nav-dropdown">
+     <a class="nav-dropdown-toggle" href="ateliers-creatifs.html">
+      Ateliers cr&eacute;atifs
+      <span class="nav-chevron">
+       ⌄
+      </span>
+     </a>
+     <div class="nav-dropdown-menu">
+      <a href="ateliers-creatifs.html">
+       Ateliers cr&eacute;atifs
+      </a>
+      <a aria-current="page" href="traces-magiques.html">
+       Traces Magiques
+      </a>
+      <a href="couleurs-de-soi.html">
+       Couleurs de Soi
+      </a>
+     </div>
+    </div>
+    <a href="bar-a-paillettes.html">
+     Bar &agrave; paillettes
+    </a>
+    <div class="nav-dropdown">
+     <a class="nav-dropdown-toggle" href="tarifs.html">
+      Tarifs
+      <span class="nav-chevron">
+       ⌄
+      </span>
+     </a>
+     <div class="nav-dropdown-menu nav-dropdown-menu-tarifs">
+      <a href="tarifs.html">
+       Tous les tarifs
+      </a>
+      <a href="tarifs-anniversaire-enfant.html">
+       Anniversaire enfant
+      </a>
+       <a href="tarifs-belly-painting.html">
+        Belly painting
+       </a>
+      <a href="tarifs-evenements.html">
+       &Eacute;v&eacute;nements
+      </a>
+      <a href="tarifs-mariages.html">
+       Mariages
+      </a>
+      <a href="tarifs-atelier-glitter-maquillage.html">
+       Atelier glitter &amp; maquillage
+      </a>
+       <a href="tarifs-ateliers-creatifs-artistiques.html">
+        Ateliers cr&eacute;atifs &amp; artistiques
+       </a>
+      <a href="tarifs-traces-magiques.html">
+       Traces Magiques
+      </a>
+      <a href="tarifs-couleurs-de-soi.html">
+       Couleurs de Soi
+      </a>
+     </div>
+    </div>
+    <a href="contact.html">
+     Contact
+    </a>
+   </nav>
+  </header>
+  <main>
+   <section class="hero">
+    <div class="container hero-grid">
+     <div class="hero-copy">
+      <div class="eyebrow">
+       &Eacute;veil artistique &middot; petite enfance
+      </div>
+      <h1>
+       Traces Magiques
+      </h1>
+      <p>
+       Un atelier o&ugrave; les petites mains, les petits pieds et les gestes spontan&eacute;s deviennent mati&egrave;re &agrave; cr&eacute;er. Les enfants d&eacute;couvrent les couleurs, les empreintes et les textures tout en participant &agrave; une &oelig;uvre collective imagin&eacute;e pour eux.
+      </p>
+      <div class="hero-actions">
+       <a class="btn" href="contact.html">
+        Imaginer un atelier
+       </a>
+       <a class="btn" href="tarifs-traces-magiques.html">
+        Voir les tarifs
+       </a>
+      </div>
+     </div>
+     <div class="hero-visual">
+      <img alt="Paon cr&eacute;&eacute; avec des empreintes de mains lors d&rsquo;un atelier Traces Magiques" src="traces-magiques-paon.webp"/>
+     </div>
+    </div>
+   </section>
+   <section>
+    <div class="container intro-grid">
+     <div>
+      <div class="eyebrow">
+       Cr&eacute;er avec ce que l&rsquo;enfant sait d&eacute;j&agrave; faire
+      </div>
+      <h2>
+       Des empreintes qui deviennent une histoire
+      </h2>
+      <p>
+       Traces Magiques est pens&eacute; pour les tout-petits, de 0 &agrave; 3 ans. Il ne s&rsquo;agit pas de demander &agrave; l&rsquo;enfant de reproduire un mod&egrave;le : il explore la peinture par le geste, la trace, la main ou le pied.
+      </p>
+      <p style="margin-top:14px">
+       &Agrave; partir d&rsquo;un th&egrave;me choisi avec la structure, L&rsquo;Atelier de Macete pr&eacute;pare une fresque illustr&eacute;e. Les enfants viennent ensuite l&rsquo;enrichir de leurs propres empreintes. Un poisson, un poussin, un paon ou tout autre univers peut ainsi na&icirc;tre de leurs traces.
+      </p>
+      <div class="content-visual visual-poisson">
+       <img alt="Poussin jaune cr&eacute;&eacute; &agrave; partir d&rsquo;empreintes de main et de pied" loading="lazy" src="traces-magiques-poussin.webp"/>
+      </div>
+     </div>
+     <div class="soft-card">
+      <h3>
+       Une cr&eacute;ation r&eacute;ellement collective
+      </h3>
+      <p>
+       Chaque enfant participe &agrave; sa mani&egrave;re et &agrave; son rythme. Les traces individuelles s&rsquo;assemblent dans une composition commune que la structure conserve &agrave; l&rsquo;issue de l&rsquo;atelier.
+      </p>
+      <div class="points">
+       <div class="point">
+        <h3>
+         Sensoriel
+        </h3>
+        <p>
+         Couleurs, mati&egrave;re, contact et d&eacute;couverte du geste.
+        </p>
+       </div>
+       <div class="point">
+        <h3>
+         Accessible
+        </h3>
+        <p>
+         Aucune capacit&eacute; en dessin n&rsquo;est n&eacute;cessaire.
+        </p>
+       </div>
+       <div class="point">
+        <h3>
+         Valorisant
+        </h3>
+        <p>
+         Chaque empreinte trouve sa place dans l&rsquo;&oelig;uvre finale.
+        </p>
+       </div>
+       <div class="point">
+        <h3>
+         Sur mesure
+        </h3>
+        <p>
+         Le th&egrave;me et l&rsquo;illustration s&rsquo;adaptent au projet de la structure.
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section>
+    <div class="container">
+     <div class="section-head">
+      <div class="eyebrow">
+       Pour les professionnels de la petite enfance
+      </div>
+      <h2>
+       Un atelier qui s&rsquo;adapte &agrave; votre structure
+      </h2>
+      <p>
+       Traces Magiques peut prendre la forme d&rsquo;une s&eacute;ance ponctuelle ou s&rsquo;inscrire dans un cycle et un projet p&eacute;dagogique plus large.
+      </p>
+     </div>
+     <div class="audiences-layout">
+      <div class="audiences">
+       <div class="audience">
+        <h3>
+         Cr&egrave;ches &amp; micro-cr&egrave;ches
+        </h3>
+        <p>
+         Une exp&eacute;rience artistique adapt&eacute;e au rythme et &agrave; l&rsquo;&acirc;ge des tout-petits.
+        </p>
+       </div>
+       <div class="audience">
+        <h3>
+         RPE &middot; MAM &middot; LAEP
+        </h3>
+        <p>
+         Un support propice &agrave; l&rsquo;exploration et aux moments partag&eacute;s entre enfants et adultes.
+        </p>
+       </div>
+       <div class="audience">
+        <h3>
+         Associations &amp; projets petite enfance
+        </h3>
+        <p>
+         Une cr&eacute;ation collective con&ccedil;ue autour d&rsquo;un th&egrave;me, d&rsquo;une saison ou d&rsquo;un projet particulier.
+        </p>
+       </div>
+      </div>
+      <div class="audiences-single-visual">
+       <div class="content-visual">
+        <img alt="Poisson bleu cr&eacute;&eacute; &agrave; partir d&rsquo;une empreinte de main" loading="lazy" src="traces-magiques-poisson.webp"/>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="themes-section">
+    <div class="container">
+     <div class="section-head">
+      <div class="eyebrow">
+       Une ann&eacute;e de Traces Magiques
+      </div>
+      <h2>
+       Une nouvelle histoire au fil des mois
+      </h2>
+      <p>
+       Traces Magiques peut accompagner les enfants tout au long de l&rsquo;ann&eacute;e.
+        Chaque atelier peut s&rsquo;inspirer de la saison, d&rsquo;un &eacute;v&eacute;nement du calendrier
+        ou du projet p&eacute;dagogique de la structure. Au fil des s&eacute;ances, les cr&eacute;ations
+        peuvent ainsi former une v&eacute;ritable collection de fresques.
+      </p>
+     </div>
+     <div class="season-grid">
+      <article class="season-card">
+       <div class="season-months">
+        Janvier &middot; F&eacute;vrier
+       </div>
+       <h3>
+        Hiver
+       </h3>
+       <p>
+        Neige, animaux polaires, paysages d&rsquo;hiver et jeux autour des nuances froides.
+       </p>
+      </article>
+      <article class="season-card">
+       <div class="season-months">
+        Mars &middot; Avril
+       </div>
+       <h3>
+        Printemps
+       </h3>
+       <p>
+        Fleurs, jardin, premi&egrave;res couleurs, oiseaux et r&eacute;veil de la nature.
+       </p>
+      </article>
+      <article class="season-card">
+       <div class="season-months">
+        Mai &middot; Juin
+       </div>
+       <h3>
+        Nature &amp; d&eacute;couvertes
+       </h3>
+       <p>
+        Petites b&ecirc;tes, v&eacute;g&eacute;tation, animaux, mer et oc&eacute;an selon le projet choisi.
+       </p>
+      </article>
+      <article class="season-card">
+       <div class="season-months">
+        Septembre &middot; Octobre
+       </div>
+       <h3>
+        For&ecirc;t &amp; automne
+       </h3>
+       <p>
+        Feuilles, arbres, animaux de la for&ecirc;t et palette chaleureuse de saison.
+       </p>
+      </article>
+      <article class="season-card">
+       <div class="season-months">
+        Novembre &middot; D&eacute;cembre
+       </div>
+       <h3>
+        Lumi&egrave;res &amp; f&ecirc;tes d&rsquo;hiver
+       </h3>
+       <p>
+        Hiver, lumi&egrave;res, &eacute;toiles et univers de No&euml;l lorsque la structure le souhaite.
+       </p>
+      </article>
+      <article class="season-card season-card-custom">
+       <div class="season-months">
+        Et toute l&rsquo;ann&eacute;e&hellip;
+       </div>
+       <h3>
+        Votre propre th&egrave;me
+       </h3>
+       <p>
+        Ferme, &eacute;motions, animaux, nature ou projet particulier : la fresque est con&ccedil;ue sur mesure avec la structure.
+       </p>
+      </article>
+     </div>
+     <div class="cycle-note">
+      <div class="eyebrow">
+       S&eacute;ance ponctuelle ou cycle
+      </div>
+      <h3>
+       Cr&eacute;er une collection au fil de l&rsquo;ann&eacute;e
+      </h3>
+      <p>
+       Plusieurs interventions peuvent &ecirc;tre pens&eacute;es comme un parcours : les enfants
+        retrouvent r&eacute;guli&egrave;rement l&rsquo;exp&eacute;rience de la trace tandis que chaque nouvelle
+        fresque explore un univers diff&eacute;rent. La structure constitue progressivement
+        une collection qui raconte son ann&eacute;e.
+      </p>
+     </div>
+    </div>
+   </section>
+   <section>
+    <div class="container fresco-grid">
+     <div class="single-poussin poussin-two">
+      <img alt="Poussin r&eacute;alis&eacute; &agrave; partir d&rsquo;empreintes de pied et de main" loading="lazy" src="poussin empreinte pied et main.webp"/>
+     </div>
+     <div class="fresco-copy">
+      <div>
+       <div class="eyebrow">
+        Une &oelig;uvre qui reste
+       </div>
+       <h2>
+        La fresque devient un souvenir du projet
+       </h2>
+       <p>
+        L&rsquo;atelier ne se termine pas lorsque la peinture s&egrave;che. La cr&eacute;ation collective reste dans la structure : elle peut &ecirc;tre expos&eacute;e et permet de valoriser les traces laiss&eacute;es par les enfants.
+       </p>
+       <p style="margin-top:14px">
+        Le format, le th&egrave;me, la dur&eacute;e et le nombre de participants sont d&eacute;finis selon le contexte. Le mat&eacute;riel n&eacute;cessaire &agrave; l&rsquo;atelier est pr&eacute;vu dans la proposition.
+       </p>
+       <a class="btn" href="tarifs-traces-magiques.html" style="margin-top:26px">
+        D&eacute;couvrir les modalit&eacute;s
+       </a>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section>
+    <div class="container section-head">
+     <div class="eyebrow">
+      Strasbourg &middot; Bas-Rhin &middot; Alsace
+     </div>
+     <h2>
+      Traces Magiques se d&eacute;place jusqu&rsquo;&agrave; votre structure
+     </h2>
+     <p>
+      L&rsquo;atelier peut &ecirc;tre organis&eacute; &agrave; Strasbourg et dans l&rsquo;Eurom&eacute;tropole, ainsi que dans le Bas-Rhin et plus largement en Alsace selon le projet. Les modalit&eacute;s de d&eacute;placement sont int&eacute;gr&eacute;es &agrave; la proposition sur mesure.
+     </p>
+    </div>
+   </section>
+   
+<section>
+  <div class="container section-head">
+    <div class="eyebrow">Découvrir les autres ateliers</div>
+    <h2>Explorer l’univers des ateliers créatifs</h2>
+    <p>Traces Magiques fait partie des ateliers créatifs de L’Atelier de Macete. Pour les adolescents, adultes et seniors, découvrez aussi <a href="couleurs-de-soi.html"><strong>Couleurs de Soi</strong></a>, un atelier autour du portrait et de l’expression personnelle, ou parcourez <a href="ateliers-creatifs.html"><strong>tous les ateliers créatifs</strong></a>.</p>
+  </div>
+</section>
+
+<section class="cta">
+    <div class="container">
+     <div class="cta-box">
+      <div class="eyebrow">
+       Votre th&egrave;me peut devenir la prochaine fresque
+      </div>
+      <h2>
+       Construisons un atelier adapt&eacute; &agrave; vos tout-petits
+      </h2>
+      <p>
+       Indiquez-moi votre structure, l&rsquo;&acirc;ge et le nombre d&rsquo;enfants, le th&egrave;me envisag&eacute; et le format souhait&eacute; afin de pr&eacute;parer une proposition personnalis&eacute;e.
+      </p>
+      <a class="btn" href="contact.html">
+       Parler de votre projet
+      </a>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer>
+   &copy; L&rsquo;Atelier de Macete &middot; Ateliers cr&eacute;atifs &amp; exp&eacute;riences artistiques en Alsace
+  </footer>
+ </body>
+</html>
