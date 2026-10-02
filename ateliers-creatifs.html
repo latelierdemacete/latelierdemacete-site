@@ -266,7 +266,55 @@ h3{font-family:'Marcellus',serif;font-weight:400} p{color:var(--muted)}
  .gallery-mosaic{grid-auto-rows:280px}
 }
 
-  </style>
+  
+/* Correction finale : contenu entièrement contenu dans la dernière bulle */
+.final-cta{
+  min-height:720px;
+  padding:130px 8%;
+}
+.final-cta::before{
+  width:min(920px,94vw);
+  height:590px;
+}
+.final-cta .container{
+  position:relative;
+  z-index:1;
+  width:min(650px,82%);
+  margin:auto;
+}
+.final-cta h2{
+  margin-bottom:22px;
+}
+.final-cta p{
+  max-width:560px;
+  margin:0 auto 32px;
+}
+.final-cta .cta-buttons{
+  justify-content:center;
+}
+
+@media(max-width:700px){
+  .final-cta{
+    min-height:720px;
+    padding:100px 6%;
+  }
+  .final-cta::before{
+    width:96%;
+    height:620px;
+  }
+  .final-cta .container{
+    width:82%;
+  }
+  .final-cta .cta-buttons{
+    flex-direction:column;
+    align-items:center;
+  }
+  .final-cta .btn{
+    width:min(260px,100%);
+  }
+}
+
+</style>
   <script>
    document.documentElement.classList.add("js");
   </script>
