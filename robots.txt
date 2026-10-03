@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://latelierdemacete.github.io/latelierdemacete-site/sitemap.xml
+Sitemap: https://latelierdemacete.fr/sitemap.xml
